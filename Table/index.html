@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+      h2{
+    margin-bottom: 20px;
+    color: #333;
+}
+table{
+    width: 60%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+body{
+    font-family: "Aerial", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+thead tr{
+    background-color:#4caf50;
+    color: #fff;
+    text-align:center;
+}
+tbody td{
+    text-align: center;
+}
+th,td{
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+tbody tr:nth :nth-child(even){
+    background-color: #f2f2f2;
+}
+tbody tr:hover{
+    background-color:#f1f1f1;
+    cursor: pointer;
+}
+th{
+    background-color: #555;
+    color: #fff;
+}
+    </style>
+</head>
+<body>
+    <h2>Student Data</h2>
+    <table border="1"  >
+        <thead>
+     <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Grade</th>
+        <th>Major</th>
+        <th>GPA</th>
+     </tr> 
+    </thead>
+    <tbody>
+     <tr>
+        <td>John Doe</td>
+        <td>20</td>
+        <td>Junior</td>
+        <td>Computer science</td>
+        <td>3.8</td>
+     </tr> 
+     <tr>
+        <td>Jane Smith</td>
+        <td>21</td>
+        <td>Senior</td>
+        <td>Biology</td>
+        <td>3.6</td>
+     </tr>
+     <tr>
+        <td>Emily Johnson</td>
+        <td>19</td>
+        <td>Sophomore</td>
+        <td>Mathematics</td>
+        <td>3.9</td>
+     </tr>
+     <tr>
+        <td>Michael Brown</td>
+        <td>22</td>
+        <td>Senior</td>
+        <td>Engineering</td>
+        <td>3.7</td>
+     </tr>
+     <tr>
+        <td>Jessica William</td>
+        <td>18</td>
+        <td>Freshman</td>
+        <td>Physics</td>
+        <td>3.5</td>
+     </tr>
+    </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(41, 101, 57);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    padding: 0 8%;
+}
+body p{
+    color: white;
+}
+.container{
+    color: rgb(248, 244, 244);
+    top: 20%;
+    left: 20%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+h1{
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 span{
+    color: orange;
+}
+.logo{
+    width: 200px;
+    padding: 20px;
+}
+.logo:hover{
+    background-color: #171313;
+}
+button{
+    color: white;
+    background: transparent;
+    outline: none;
+    display: flex;
+    align-items: center; /* Fixed typo here */
+    margin-top: 30px;
+    padding: 3px;
+}
+button:hover{
+    color: black;
+    background-color: rgb(214, 214, 40);
+}
+button img{
+    width: 15px;
+    margin-left: 12px;
+}
+.launch-time{
+    display: flex;
+}
+.launch-time div{
+    flex-basis: 100px;
+}
+.launch-time div p{
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+.rocket{
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s infinite;
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}

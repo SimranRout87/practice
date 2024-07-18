@@ -1,0 +1,26 @@
+.text-input{
+    display: block;
+    height: 10vh;
+    width: 80%;
+    border: 2px solid black;
+    margin: 1rem;
+    padding: 1rem;
+}
+.btn{
+    padding: 6px;
+    font-size: large;
+    margin: 5rem;
+    margin-left:39%;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: greenyellow;
+}
+.output{
+    display: block;
+    height: 10vh;
+    width: 80%;
+    border: 2px solid black;
+    margin: 1rem;
+    padding: 1rem;
+}
