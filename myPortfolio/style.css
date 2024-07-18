@@ -1,8 +1,16 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root{
     --primary-color:#22c55e;
-    --off-yellow:#c8b13e;
+    --off-yellow:#fad414;
     --light-grey:#bbf7d0;
 }
+
+    body{
+        font-family: "Roboto", sans-serif;
+    }
     /* navigation */
     .navigation{ 
         background-color: var(--primary-color);
@@ -53,5 +61,28 @@
         color: var(--primary-color);
     }
     .hero .hero-heading .heading-inverted{
-color: var(--off-yellow);
+        color: var(--off-yellow);
     }
+
+
+        /* section */
+        .section{
+            background-color:var(--light-grey);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 2rem;
+            text-align: center;
+        }
+        .link{llll
+            /* box-sizing: border-box; */
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        .link-primary{
+            background-color: var(--primary-color);
+            max-width: 140px;
+            padding: 0.6rem 1.2rem;
+            color: var(--off-yellow);
+            margin: 1rem auto;
+            border-radius: 2rem;
+        }
