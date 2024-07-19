@@ -1,11 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap');
 
-
- 
+p{
+    font-family: kalnia glaze;
+}
  body{
-    background-color: rgb(171, 152, 152);
+    background-image: linear-gradient(rgb(118, 20, 72),rgb(31, 101, 138));
     color:black;
  }
  .container-first{
@@ -34,6 +36,7 @@
 }
 .image{
     position: relative;
+    margin-top: 22px;
 }
 .text-overlay-one{
     position: absolute;
@@ -146,6 +149,7 @@ button:hover{
     padding: 10px;
 }
 .font{
+    
     font-size:30px;
     display: flex;
     justify-content: center;
@@ -155,12 +159,13 @@ button:hover{
 }
 
 .font-box{
+    box-shadow: 0px 0px 5px 3px  ; 
     margin-left: 17%;
     height: 100px;
     width: 50%;
     padding: 7%;
     text-align: center;
-    border: 2px solid black;
+    border: 0.5px solid darkblue;
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89,1);
 }
 .font-content{
@@ -168,6 +173,7 @@ button:hover{
     text-align: center;
     font: bolder;
     font-family: bona nova sc;
+    padding: 20px;
 }
 .font-content-inside{
     text-align: center;
@@ -176,21 +182,24 @@ button:hover{
     padding: 0  15px;
     font-size: 20px;
     left:30% ;
-    transform: translate(-250%);
+    top: 12%;
+    transform: translate( -250%, 45%);
     color: black;
+    background:transparent;
 }
 .story-explore:hover{
     padding: 0  15px;
     font-style: italic;
     font-size: 20px;
     background: transparent;
-    box-shadow: 0 0 10px 3px #283737;
+    box-shadow: 0 0 10px 7px #283737;
 }
 .footer{
     font-size: 30px;
     text-align: center;
     font: bolder;
     font-family: bona nova sc;
+    padding: 25px;
 }
 div p{
     text-align: center;
@@ -199,4 +208,49 @@ div p{
 .address-box{
     text-align: center;
     margin: 10px;
+}
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font: bolder;
+    font-size: 35px;
+    color: black;
+}
+.loading span{
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+.loading span{
+    animation: loading 1.4s infinite alternate;
+}
+.loading span:nth-child(1){
+    animation-delay: 0s;
+}
+.loading span:nth-child(2){
+    animation-delay: 0.1s;
+}
+.loading span:nth-child(3){
+    animation-delay: 0.2s;
+}
+.loading span:nth-child(4){
+    animation-delay: 0.3s;
+}
+.loading span:nth-child(5){
+    animation-delay: 0.4s;
+}
+.loading span:nth-child(6){
+    animation-delay: 0.5s;
+}
+.loading span:nth-child(7){
+    animation-delay: 0.6s;
+}
+@keyframes loading {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }
